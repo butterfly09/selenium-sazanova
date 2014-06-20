@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>selenium-sazanova</groupId>
-    <artifactId>sazanova</artifactId>
+    <artifactId>selenium-sazanova</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <dependencies>
@@ -17,18 +17,19 @@
     </dependencies>
 
     <build>
-    <plugins>
-    <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-surefire-plugin</artifactId>
-        <version>2.16</version>
-        <configuration>
-            <suiteXmlFiles>
-                <suiteXmlFile>src\test\resources\testng.xml</suiteXmlFile>
-            </suiteXmlFiles>
-        </configuration>
-    </plugin>
-    </plugins>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>2.16</version>
+                <configuration>
+                    <systemPropertiesFile>
+                        <systemFileXml>src/test/resources/testng.xml</systemFileXml>
+                    </systemPropertiesFile>
+                </configuration>
+            </plugin>
+        </plugins>
+
     </build>
-    
+
 </project>
