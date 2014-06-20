@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite1" duration-ms="24" started-at="2014-06-18T21:07:44Z" finished-at="2014-06-18T21:07:44Z">
+    <groups>
+    </groups>
+    <test name="smokeTest" duration-ms="24" started-at="2014-06-18T21:07:44Z" finished-at="2014-06-18T21:07:44Z">
+      <class name="testing.SmokeTest">
+        <test-method status="PASS" signature="sTest()" name="sTest" duration-ms="12" started-at="2014-06-18T21:07:44Z" finished-at="2014-06-18T21:07:44Z">
+        </test-method>
+      </class>
+    </test>
+  </suite>
+</testng-results>
