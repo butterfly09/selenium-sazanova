@@ -6,4 +6,10 @@
             <class name="SmokeTest" />
         </classes>
     </test>
+
+    <test name="BuyPhone" >
+        <classes>
+            <class name="testing.BuySmartphone" />
+        </classes>
+    </test>
 </suite>
