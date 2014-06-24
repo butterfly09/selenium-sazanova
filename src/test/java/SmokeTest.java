@@ -2,9 +2,6 @@ import junit.framework.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
-/**
- * Created by butterfly on 22.06.2014.
- */
 public class SmokeTest {
 
     @DataProvider
@@ -19,6 +16,4 @@ public class SmokeTest {
         int result = actual.length();
         Assert.assertEquals(result, expected);
     }
-
-
 }

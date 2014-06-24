@@ -1,12 +1,5 @@
 package Goroscop;
 
-/**
- * Created with IntelliJ IDEA.
- * User: admin
- * Date: 11.06.14
- * Time: 19:36
- * To change this template use File | Settings | File Templates.
- */
 public class Horoskop {
 
     public static void main(String[] args)
@@ -14,7 +7,6 @@ public class Horoskop {
         String znak = "Козерог";
         System.out.println(goroscop(znak));
     }
-
 
     public static String goroscop(String znak) {
 

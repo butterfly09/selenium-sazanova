@@ -7,9 +7,9 @@
         </classes>
     </test>
 
-    <test name="BuyPhone" >
+    <!--<test name="BuyPhone" >
         <classes>
-            <class name="testing.BuySmartphone" />
+            <class name="testng.BuySmartphone" />
         </classes>
-    </test>
+    </test>-->
 </suite>
