@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite hostname="butterfly-PC" name="testng.StringLength" tests="3" failures="0" timestamp="25 Jun 2014 11:33:34 GMT" time="0.054" errors="0">
-  <testcase name="stringLength" time="0.025" classname="testng.StringLength"/>
-  <testcase name="stringLength" time="0.0" classname="testng.StringLength"/>
-  <testcase name="stringLength" time="0.0" classname="testng.StringLength"/>
+<testsuite hostname="WIN-C6M3PA3VFT9" name="testng.StringLength" tests="3" failures="0" timestamp="25 Jun 2014 16:41:50 GMT" time="0.76" errors="0">
+  <testcase name="stringLength" time="0.07" classname="testng.StringLength"/>
+  <testcase name="stringLength" time="0.001" classname="testng.StringLength"/>
+  <testcase name="stringLength" time="0.002" classname="testng.StringLength"/>
 </testsuite>

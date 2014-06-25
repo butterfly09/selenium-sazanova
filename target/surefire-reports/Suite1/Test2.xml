@@ -1,4 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite hostname="butterfly-PC" name="testng.SmokeTest" tests="1" failures="0" timestamp="25 Jun 2014 11:33:34 GMT" time="0.002" errors="0">
-  <testcase name="sTest" time="0.0" classname="testng.SmokeTest"/>
+<testsuite hostname="WIN-C6M3PA3VFT9" name="testng.SmokeTest" tests="1" failures="0" timestamp="25 Jun 2014 16:41:50 GMT" time="0.005" errors="0">
+  <testcase name="sTest" time="0.002" classname="testng.SmokeTest"/>
 </testsuite>

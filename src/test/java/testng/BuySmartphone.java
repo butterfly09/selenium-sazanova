@@ -7,13 +7,16 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.annotations.Test;
 
 public class BuySmartphone {
 
+    @Test
     public void buySmartphone(){
 
         WebDriver driver = new FirefoxDriver();
         driver.get("http://rozetka.com.ua/");
+        driver.manage().window().maximize();
         String result1 = driver.findElement(By.className("m-cart-empty")).getText();
         Assert.assertEquals(result1, "Корзина пуста");
 
