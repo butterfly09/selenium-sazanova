@@ -19,10 +19,10 @@
 /target/surefire-reports/TestSuite.txt
 /target/surefire-reports/emailable-report.html
 /target/surefire-reports/index.html
-/target/surefire-reports/junitreports/TEST-testng.SmokeTest.xml
+/target/surefire-reports/junitreports/TEST-testng.StringLength.xml
 /target/surefire-reports/testng-failed.xml
 /target/surefire-reports/testng-results.xml
 /target/surefire-reports/testng.css
-/target/test-classes/testng/SmokeTest.class
+/target/test-classes/testng/StringLength.class
 /target/test-classes/testng.xml
 /*.iml
