@@ -18,4 +18,10 @@
             <class name="testng.BuySmartphone" />
         </classes>
     </test>
+
+    <test name="Test4" >
+        <classes>
+            <class name="testng.LaptopFilter" />
+        </classes>
+    </test>
 </suite>
