@@ -31,7 +31,7 @@ public class BuySmartphone {
         wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@id=\"head_banner_container\"]/div[4]/div/div/div[1]/div/div/div[4]/div/div/div[1]/div[2]/a/span")));
         driver.findElement(By.xpath("//*[@id=\"head_banner_container\"]/div[4]/div/div/div[1]/div/div/div[4]/div/div/div[1]/div[2]/a/span")).click();
 
-        driver.findElement(By.id("sort_view")).click();
+        driver.findElement(By.xpath("//*[@id=\"sort_view\"]/a")).click();
         driver.findElement(By.xpath("//*[@id=\"sort_view\"]/div/div/ul/li[1]/a")).click();
 
         wait.until(ExpectedConditions.elementToBeClickable(By.name("topurchasesfromcatalog")));

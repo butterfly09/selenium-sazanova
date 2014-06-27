@@ -14,7 +14,7 @@ import org.testng.annotations.Test;
 import java.util.concurrent.TimeUnit;
 
 public class LaptopFilter {
-
+/*
     public static WebDriver driver;
     public static final By notebookLink = By.xpath("//a[contains(@*,'notebooks/c80004/')]");
 
@@ -56,9 +56,10 @@ public class LaptopFilter {
         driver.quit();  */
     }
 
-    @AfterSuite
-    public void shutEnv() {
-        if (driver != null)
-            driver.quit();
-    }
-}
+    //@AfterSuite
+    //public void shutEnv() {
+    //    if (driver != null)
+    //        driver.quit();
+    //}
+
+//}
