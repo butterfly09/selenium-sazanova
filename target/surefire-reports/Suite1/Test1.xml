@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite hostname="microsof-0175b9" name="testng.StringLength" tests="3" failures="0" timestamp="27 Jun 2014 18:23:42 GMT" time="0.031" errors="0">
-  <testcase name="stringLength" time="0.015" classname="testng.StringLength"/>
-  <testcase name="stringLength" time="0.0" classname="testng.StringLength"/>
-  <testcase name="stringLength" time="0.0" classname="testng.StringLength"/>
-</testsuite>
