@@ -17,8 +17,10 @@ public class TicketsForBabies {
 
     public static WebDriver driver;
     public static WebDriverWait wait;
-    //Авиа и ЖД билеты
-    //public static final By ticketsLink = By.xpath("//*[@id=\"fatmenu_14\"]/div/div/ol/li[1]/ul/li[9]/a");
+    private static final By aviaTickets = By.id("fatmenu_14");
+    private static final By router = By.xpath("//*[@id=\"fatmenu_14\"]/div/div/ol/li[1]/ul/li[9]/a");
+    private static final By twoBabies = By.xpath("//*[@id=\"content\"]/div/div/div/div/div[2]/div[4]/div[2]/div[2]");
+    private static final By message = By.xpath("//*[@id=\"head_banner_container\"]/div[5]/div/div/p");
 
     @BeforeSuite
     public void initEnviroment(){
@@ -34,16 +36,16 @@ public class TicketsForBabies {
     public void ticketsForBabies(){
 
         Actions builder = new Actions(driver);
-        builder.moveToElement(driver.findElement(By.id("fatmenu_14")));
+        builder.moveToElement(driver.findElement(By.id("aviaTickets")));
         builder.perform();
 
-        wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@id=\"fatmenu_14\"]/div/div/ol/li[1]/ul/li[9]/a")));
-        driver.findElement(By.xpath("//*[@id=\"fatmenu_14\"]/div/div/ol/li[1]/ul/li[9]/a")).click();
+        wait.until(ExpectedConditions.elementToBeClickable(By.xpath("router")));
+        driver.findElement(By.xpath("router")).click();
 
         wait.until(ExpectedConditions.elementToBeClickable(By.className("persons")));
         //driver.findElement(By.className("persons")).findElement(By.className("item")).click();
         //driver.findElement(By.className("persons")).findElement(By.className("item")).click();
-        driver.findElement(By.xpath("//*[@id=\"content\"]/div/div/div/div/div[2]/div[4]/div[2]/div[2]")).click();
+        driver.findElement(By.xpath("twoBabies")).click();
         //String tickets = driver.findElement(By.xpath("//span[3]")).getText();
         //Assert.assertEquals(tickets, "2");
 
@@ -51,7 +53,7 @@ public class TicketsForBabies {
         driver.findElement(By.id("start_search")).click();
 
         wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@id=\"head_banner_container\"]/div[5]/div/div/p")));
-        String result = driver.findElement(By.xpath("//*[@id=\"head_banner_container\"]/div[5]/div/div/p")).getText();
+        String result = driver.findElement(By.xpath("message")).getText();
         Assert.assertEquals(result, "Младенцев не может быть больше, чем взрослых(младенцев - 2, взрослых - 1)");
     }
 
