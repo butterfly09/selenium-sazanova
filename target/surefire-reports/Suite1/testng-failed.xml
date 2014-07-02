@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite verbose="0" name="Failed suite [Suite1]">
-  <test name="TestTicketsForBabies(failed)" preserve-order="false">
+  <test name="TestSimilarProducts(failed)" preserve-order="false">
     <classes>
-      <class name="testng.TicketsForBabies">
+      <class name="testng.SimilarProducts">
         <methods>
-          <include name="ticketsForBabies"/>
           <include name="initEnviroment"/>
-          <include name="shutEnviroment"/>
+          <include name="searchSimilarProducts"/>
+          <include name="closeEnviroment"/>
         </methods>
       </class>
     </classes>

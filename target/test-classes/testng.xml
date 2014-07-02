@@ -7,4 +7,10 @@
         </classes>
     </test>
 
+    <test name="TestSimilarProducts" >
+        <classes>
+            <class name="testng.SimilarProducts" />
+        </classes>
+    </test>
+
 </suite>

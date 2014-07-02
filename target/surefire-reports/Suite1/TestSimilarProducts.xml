@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite hostname="butterfly-PC" name="testng.SimilarProducts" tests="1" failures="1" timestamp="2 Jul 2014 13:15:23 GMT" time="24.696" errors="0">
+  <testcase name="searchSimilarProducts" time="24.5" classname="testng.SimilarProducts">
+    <failure type="org.openqa.selenium.remote.UnreachableBrowserException" message="Error communicating with the remote browser. It may have died.
+Build info: version: &amp;apos;2.42.2&amp;apos;, revision: &amp;apos;6a6995d31c7c56c340d6f45a76976d43506cd6cc&amp;apos;, time: &amp;apos;2014-06-03 10:52:47&amp;apos;
+System info: host: &amp;apos;butterfly-PC&amp;apos;, ip: &amp;apos;77.47.190.95&amp;apos;, os.name: &amp;apos;Windows 7&amp;apos;, os.arch: &amp;apos;amd64&amp;apos;, os.version: &amp;apos;6.1&amp;apos;, java.version: &amp;apos;1.7.0_45&amp;apos;
+Driver info: driver.version: RemoteWebDriver">
+      <![CDATA[org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: '2.42.2', revision: '6a6995d31c7c56c340d6f45a76976d43506cd6cc', time: '2014-06-03 10:52:47'
+System info: host: 'butterfly-PC', ip: '77.47.190.95', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_45'
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:593)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:449)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:357)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at testng.SimilarProducts.searchSimilarProducts(SimilarProducts.java:49)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:217)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:84)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:92)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:7055 [/127.0.0.1] failed: Connection refused: connect
+	at org.apache.http.impl.conn.HttpClientConnectionOperator.connect(HttpClientConnectionOperator.java:138)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:314)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:363)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:219)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:195)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:85)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:108)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:186)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:72)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:57)
+	at org.openqa.selenium.remote.HttpCommandExecutor.fallBackExecute(HttpCommandExecutor.java:222)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:173)
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.execute(NewProfileExtensionConnection.java:165)
+	at org.openqa.selenium.firefox.FirefoxDriver$LazyCommandExecutor.execute(FirefoxDriver.java:362)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:572)
+	... 33 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:339)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:200)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:182)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:579)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:72)
+	at org.apache.http.impl.conn.HttpClientConnectionOperator.connect(HttpClientConnectionOperator.java:118)
+	... 47 more
+... Removed 22 stack frames]]>
+    </failure>
+  </testcase>
+</testsuite>
