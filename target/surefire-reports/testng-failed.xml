@@ -3,11 +3,52 @@
 <suite verbose="0" name="Failed suite [Suite1]">
   <test name="TestSimilarProducts(failed)" preserve-order="false">
     <classes>
+      <class name="testng.TicketsForBabies">
+        <methods>
+          <include name="initEnviroment"/>
+          <include name="shutEnviroment"/>
+        </methods>
+      </class>
       <class name="testng.SimilarProducts">
         <methods>
           <include name="initEnviroment"/>
           <include name="searchSimilarProducts"/>
-          <include name="closeEnviroment"/>
+        </methods>
+      </class>
+    </classes>
+  </test>
+  <test name="TestBuySmartphone(failed)" preserve-order="false">
+    <classes>
+      <class name="testng.TicketsForBabies">
+        <methods>
+          <include name="initEnviroment"/>
+          <include name="shutEnviroment"/>
+        </methods>
+      </class>
+      <class name="testng.BuySmartphone">
+        <methods>
+          <include name="buySmartphone"/>
+        </methods>
+      </class>
+      <class name="testng.SimilarProducts">
+        <methods>
+          <include name="initEnviroment"/>
+        </methods>
+      </class>
+    </classes>
+  </test>
+  <test name="TestTicketsForBabies(failed)" preserve-order="false">
+    <classes>
+      <class name="testng.TicketsForBabies">
+        <methods>
+          <include name="ticketsForBabies"/>
+          <include name="initEnviroment"/>
+          <include name="shutEnviroment"/>
+        </methods>
+      </class>
+      <class name="testng.SimilarProducts">
+        <methods>
+          <include name="initEnviroment"/>
         </methods>
       </class>
     </classes>

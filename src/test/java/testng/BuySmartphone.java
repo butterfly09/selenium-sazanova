@@ -10,7 +10,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Test;
 
 public class BuySmartphone {
-
+/*
     @Test
     public void buySmartphone(){
 
@@ -40,6 +40,6 @@ public class BuySmartphone {
         Assert.assertEquals(result2, "Товар");
 
         driver.quit();
-    }
+    }*/
 }
 

@@ -29,149 +29,23 @@ div.shootout {padding:2em;border:3px #4854A8 solid}
 <body>
 <table cellspacing=0 cellpadding=0 class="param">
 <tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
-<tr><td style="text-align:left;padding-right:2em">TestSimilarProducts</td><td class="numi">0</td><td class="numi">0</td><td class="numi">0</td><td class="numi_attn">1</td><td class="numi">24,7 seconds</td><td class="numi"></td><td class="numi"></td></tr>
-<tr class="stripe"><td style="text-align:left;padding-right:2em">TestTicketsForBabies</td><td class="numi">0</td><td class="numi">0</td><td class="numi">0</td><td class="numi">0</td><td class="numi">0,0 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr><td style="text-align:left;padding-right:2em">TestStringLength</td><td class="numi">0</td><td class="numi">0</td><td class="numi">0</td><td class="numi">0</td><td class="numi">0,0 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr class="stripe"><td style="text-align:left;padding-right:2em">TestSimilarProducts</td><td class="numi">0</td><td class="numi">0</td><td class="numi">0</td><td class="numi">0</td><td class="numi">0,0 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr><td style="text-align:left;padding-right:2em">TestBuySmartphone</td><td class="numi">0</td><td class="numi">0</td><td class="numi">0</td><td class="numi">0</td><td class="numi">0,0 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr class="stripe"><td style="text-align:left;padding-right:2em">TestTicketsForBabies</td><td class="numi">1</td><td class="numi">1</td><td class="numi">0</td><td class="numi">0</td><td class="numi">14,2 seconds</td><td class="numi"></td><td class="numi"></td></tr>
 <tr class="total"><td>Total</td>
-<td class="numi">0</td><td class="numi">0</td><td class="numi">0</td><td class="numi_attn">1</td><td class="numi">24,7 seconds</td><td colspan="2">&nbsp;</td></tr>
+<td class="numi">1</td><td class="numi">1</td><td class="numi">0</td><td class="numi">0</td><td class="numi">14,5 seconds</td><td colspan="2">&nbsp;</td></tr>
 </table>
 <a id="summary"></a>
 <table cellspacing=0 cellpadding=0 class="passed">
 <tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Time<br/>(Msecs)</th></tr>
-<tr><th colspan="4">TestSimilarProducts &#8212; failed (configuration methods)</th></tr>
-<tr class="failedodd"><td rowspan="1">testng.SimilarProducts<td><a href="#m1"><b>closeEnviroment</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr>
-<tr><th colspan="4">TestSimilarProducts &#8212; failed</th></tr>
-<tr class="failedodd"><td rowspan="1">testng.SimilarProducts<td><a href="#m2"><b>searchSimilarProducts</b>  </a></td><td class="numi">1</td><td class="numi">24500</td></tr>
+<tr><th colspan="4">TestTicketsForBabies &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="1">testng.TicketsForBabies<td><a href="#m1"><b>ticketsForBabies</b>  </a></td><td class="numi">1</td><td class="numi">14227</td></tr>
 </table>
+<h1>TestStringLength</h1>
 <h1>TestSimilarProducts</h1>
-<a id="m1"></a><h2>testng.SimilarProducts:closeEnviroment</h2>
-<div style="padding-left:3em">
-<p>Error communicating with the remote browser. It may have died.
-Build info: version: &apos;2.42.2&apos;, revision: &apos;6a6995d31c7c56c340d6f45a76976d43506cd6cc&apos;, time: &apos;2014-06-03 10:52:47&apos;
-System info: host: &apos;butterfly-PC&apos;, ip: &apos;77.47.190.95&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_45&apos;
-Driver info: driver.version: RemoteWebDriver</p>
-org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:593)
-<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:614)
-<br/>at org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:468)
-<br/>at testng.SimilarProducts.closeEnviroment(SimilarProducts.java:64)
-<br/>22 lines not shown
-<p>Caused by Connect to 127.0.0.1:7055 [/127.0.0.1] failed: Connection refused: connect</p>
-org.apache.http.impl.conn.HttpClientConnectionOperator.connect(HttpClientConnectionOperator.java:138)
-<br/>at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:314)
-<br/>at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:363)
-<br/>at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:219)
-<br/>at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:195)
-<br/>at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:85)
-<br/>at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:108)
-<br/>at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:186)
-<br/>at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:72)
-<br/>at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:57)
-<br/>at org.openqa.selenium.remote.HttpCommandExecutor.fallBackExecute(HttpCommandExecutor.java:204)
-<br/>at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:173)
-<br/>at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.execute(NewProfileExtensionConnection.java:165)
-<br/>at org.openqa.selenium.firefox.FirefoxDriver$LazyCommandExecutor.execute(FirefoxDriver.java:362)
-<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:572)
-<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:614)
-<br/>at org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:468)
-<br/>at testng.SimilarProducts.closeEnviroment(SimilarProducts.java:64)
-<br/>22 lines not shown
-<p>Caused by Connection refused: connect</p>
-java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
-<br/>at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
-<br/>at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:339)
-<br/>at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:200)
-<br/>at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:182)
-<br/>at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
-<br/>at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
-<br/>at java.net.Socket.connect(Socket.java:579)
-<br/>at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:72)
-<br/>at org.apache.http.impl.conn.HttpClientConnectionOperator.connect(HttpClientConnectionOperator.java:118)
-<br/>at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:314)
-<br/>at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:363)
-<br/>at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:219)
-<br/>at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:195)
-<br/>at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:85)
-<br/>at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:108)
-<br/>at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:186)
-<br/>at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:72)
-<br/>at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:57)
-<br/>at org.openqa.selenium.remote.HttpCommandExecutor.fallBackExecute(HttpCommandExecutor.java:204)
-<br/>at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:173)
-<br/>at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.execute(NewProfileExtensionConnection.java:165)
-<br/>at org.openqa.selenium.firefox.FirefoxDriver$LazyCommandExecutor.execute(FirefoxDriver.java:362)
-<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:572)
-<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:614)
-<br/>at org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:468)
-<br/>at testng.SimilarProducts.closeEnviroment(SimilarProducts.java:64)
-<br/>22 lines not shown
-</div>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<a id="m2"></a><h2>testng.SimilarProducts:searchSimilarProducts</h2>
-<div style="padding-left:3em">
-<p>Error communicating with the remote browser. It may have died.
-Build info: version: &apos;2.42.2&apos;, revision: &apos;6a6995d31c7c56c340d6f45a76976d43506cd6cc&apos;, time: &apos;2014-06-03 10:52:47&apos;
-System info: host: &apos;butterfly-PC&apos;, ip: &apos;77.47.190.95&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_45&apos;
-Driver info: driver.version: RemoteWebDriver</p>
-org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:593)
-<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
-<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:449)
-<br/>at org.openqa.selenium.By$ByXPath.findElement(By.java:357)
-<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
-<br/>at testng.SimilarProducts.searchSimilarProducts(SimilarProducts.java:49)
-<br/>29 lines not shown
-<p>Caused by Connect to 127.0.0.1:7055 [/127.0.0.1] failed: Connection refused: connect</p>
-org.apache.http.impl.conn.HttpClientConnectionOperator.connect(HttpClientConnectionOperator.java:138)
-<br/>at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:314)
-<br/>at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:363)
-<br/>at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:219)
-<br/>at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:195)
-<br/>at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:85)
-<br/>at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:108)
-<br/>at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:186)
-<br/>at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:72)
-<br/>at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:57)
-<br/>at org.openqa.selenium.remote.HttpCommandExecutor.fallBackExecute(HttpCommandExecutor.java:222)
-<br/>at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:173)
-<br/>at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.execute(NewProfileExtensionConnection.java:165)
-<br/>at org.openqa.selenium.firefox.FirefoxDriver$LazyCommandExecutor.execute(FirefoxDriver.java:362)
-<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:572)
-<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
-<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:449)
-<br/>at org.openqa.selenium.By$ByXPath.findElement(By.java:357)
-<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
-<br/>at testng.SimilarProducts.searchSimilarProducts(SimilarProducts.java:49)
-<br/>29 lines not shown
-<p>Caused by Connection refused: connect</p>
-java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
-<br/>at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
-<br/>at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:339)
-<br/>at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:200)
-<br/>at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:182)
-<br/>at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
-<br/>at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
-<br/>at java.net.Socket.connect(Socket.java:579)
-<br/>at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:72)
-<br/>at org.apache.http.impl.conn.HttpClientConnectionOperator.connect(HttpClientConnectionOperator.java:118)
-<br/>at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:314)
-<br/>at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:363)
-<br/>at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:219)
-<br/>at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:195)
-<br/>at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:85)
-<br/>at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:108)
-<br/>at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:186)
-<br/>at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:72)
-<br/>at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:57)
-<br/>at org.openqa.selenium.remote.HttpCommandExecutor.fallBackExecute(HttpCommandExecutor.java:222)
-<br/>at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:173)
-<br/>at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.execute(NewProfileExtensionConnection.java:165)
-<br/>at org.openqa.selenium.firefox.FirefoxDriver$LazyCommandExecutor.execute(FirefoxDriver.java:362)
-<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:572)
-<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
-<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:449)
-<br/>at org.openqa.selenium.By$ByXPath.findElement(By.java:357)
-<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
-<br/>at testng.SimilarProducts.searchSimilarProducts(SimilarProducts.java:49)
-<br/>29 lines not shown
-</div>
-<p class="totop"><a href="#summary">back to summary</a></p>
+<h1>TestBuySmartphone</h1>
 <h1>TestTicketsForBabies</h1>
+<a id="m1"></a><h2>testng.TicketsForBabies:ticketsForBabies</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
 </body></html>

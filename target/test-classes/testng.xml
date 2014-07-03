@@ -13,4 +13,16 @@
         </classes>
     </test>
 
+    <test name="TestStringLength" >
+        <classes>
+            <class name="testng.StringLength" />
+        </classes>
+    </test>
+
+    <test name="TestBuySmartphone" >
+        <classes>
+            <class name="testng.BuySmartphone" />
+        </classes>
+    </test>
+
 </suite>

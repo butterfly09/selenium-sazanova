@@ -9,7 +9,7 @@
 
     <test name="TestSimilarProducts" >
         <classes>
-            <class name="testng.SearchSimilarProducts" />
+            <class name="testng.SimilarProducts" />
         </classes>
     </test>
 
