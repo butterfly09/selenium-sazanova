@@ -18,6 +18,12 @@ public class TicketsForBabies {
     public static WebDriver driver;
     public static WebDriverWait wait;
 
+    private static final By airAndRailwayTickets = By.id("fatmenu_14");
+    private static final By KievVienna = By.xpath("//*[@id=\"fatmenu_14\"]//a[contains(text(),'Киев-Вена')]");
+    private static final By twoBabies = By.xpath("//*[@id=\"content\"]/div/div/div/div/div[2]/div[4]/div[2]/div[2]");
+    private static final By search = By.id("start_search");
+    private static final By message = By.xpath("//*[@id=\"head_banner_container\"]/div[5]/div/div/p");
+
     @BeforeSuite
     public void initEnviroment(){
         driver = new FirefoxDriver();
@@ -32,20 +38,20 @@ public class TicketsForBabies {
     public void ticketsForBabies(){
 
         Actions builder = new Actions(driver);
-        builder.moveToElement(driver.findElement(By.id("fatmenu_14")));
+        builder.moveToElement(driver.findElement(airAndRailwayTickets));
         builder.perform();
 
-        wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@id=\"fatmenu_14\"]/div/div/ol/li[1]/ul/li[9]/a")));
-        driver.findElement(By.xpath("//*[@id=\"fatmenu_14\"]/div/div/ol/li[1]/ul/li[9]/a")).click();
+        wait.until(ExpectedConditions.elementToBeClickable(KievVienna));
+        driver.findElement(KievVienna).click();
 
-        wait.until(ExpectedConditions.elementToBeClickable(By.className("persons")));
-        driver.findElement(By.xpath("//*[@id=\"content\"]/div/div/div/div/div[2]/div[4]/div[2]/div[2]")).click();
+        wait.until(ExpectedConditions.elementToBeClickable(twoBabies));
+        driver.findElement(twoBabies).click();
 
-        wait.until(ExpectedConditions.elementToBeClickable(By.id("start_search")));
-        driver.findElement(By.id("start_search")).click();
+        wait.until(ExpectedConditions.elementToBeClickable(search));
+        driver.findElement(search).click();
 
-        wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@id=\"head_banner_container\"]/div[5]/div/div/p")));
-        String result = driver.findElement(By.xpath("//*[@id=\"head_banner_container\"]/div[5]/div/div/p")).getText();
+        wait.until(ExpectedConditions.elementToBeClickable(message));
+        String result = driver.findElement(message).getText();
         Assert.assertEquals(result, "Младенцев не может быть больше, чем взрослых(младенцев - 2, взрослых - 1)");
     }
 
