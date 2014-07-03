@@ -20,9 +20,9 @@ public class TicketsForBabies {
 
     private static final By airAndRailwayTickets = By.id("fatmenu_14");
     private static final By KievVienna = By.xpath("//*[@id=\"fatmenu_14\"]//a[contains(text(),'Киев-Вена')]");
-    private static final By twoBabies = By.xpath("//*[@id=\"content\"]/div/div/div/div/div[2]/div[4]/div[2]/div[2]");
+    private static final By twoBabies = By.xpath("//*[@id=\"content\"]//div[contains(@class,'infants')]/div/div[2]");
     private static final By search = By.id("start_search");
-    private static final By message = By.xpath("//*[@id=\"head_banner_container\"]/div[5]/div/div/p");
+    private static final By message = By.xpath("//div[contains(@class,'error_popup')]//*[contains(text(),'Младенцев не может быть больше, чем взрослых')]");
 
     @BeforeSuite
     public void initEnviroment(){

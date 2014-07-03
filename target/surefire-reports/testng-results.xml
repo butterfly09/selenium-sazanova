@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite1" duration-ms="11499" started-at="2014-07-03T14:45:38Z" finished-at="2014-07-03T14:45:49Z">
+  <suite name="Suite1" duration-ms="16319" started-at="2014-07-03T16:03:45Z" finished-at="2014-07-03T16:04:01Z">
     <groups>
     </groups>
-    <test name="TestStringLength" duration-ms="0" started-at="2014-07-03T14:45:49Z" finished-at="2014-07-03T14:45:49Z">
+    <test name="TestStringLength" duration-ms="0" started-at="2014-07-03T16:04:01Z" finished-at="2014-07-03T16:04:01Z">
     </test>
-    <test name="TestSimilarProducts" duration-ms="1" started-at="2014-07-03T14:45:49Z" finished-at="2014-07-03T14:45:49Z">
+    <test name="TestSimilarProducts" duration-ms="0" started-at="2014-07-03T16:04:01Z" finished-at="2014-07-03T16:04:01Z">
     </test>
-    <test name="TestBuySmartphone" duration-ms="0" started-at="2014-07-03T14:45:49Z" finished-at="2014-07-03T14:45:49Z">
+    <test name="TestBuySmartphone" duration-ms="0" started-at="2014-07-03T16:04:01Z" finished-at="2014-07-03T16:04:01Z">
       <class name="testng.TicketsForBabies">
-        <test-method status="PASS" signature="initEnviroment()" name="initEnviroment" is-config="true" duration-ms="22116" started-at="2014-07-03T14:45:16Z" finished-at="2014-07-03T14:45:38Z">
+        <test-method status="PASS" signature="initEnviroment()" name="initEnviroment" is-config="true" duration-ms="25356" started-at="2014-07-03T16:03:19Z" finished-at="2014-07-03T16:03:45Z">
         </test-method>
-        <test-method status="PASS" signature="shutEnviroment()" name="shutEnviroment" is-config="true" duration-ms="481" started-at="2014-07-03T14:45:49Z" finished-at="2014-07-03T14:45:50Z">
+        <test-method status="PASS" signature="shutEnviroment()" name="shutEnviroment" is-config="true" duration-ms="739" started-at="2014-07-03T16:04:01Z" finished-at="2014-07-03T16:04:02Z">
         </test-method>
       </class>
     </test>
-    <test name="TestTicketsForBabies" duration-ms="11237" started-at="2014-07-03T14:45:38Z" finished-at="2014-07-03T14:45:49Z">
+    <test name="TestTicketsForBabies" duration-ms="15989" started-at="2014-07-03T16:03:45Z" finished-at="2014-07-03T16:04:01Z">
       <class name="testng.TicketsForBabies">
-        <test-method status="PASS" signature="ticketsForBabies()" name="ticketsForBabies" duration-ms="11213" started-at="2014-07-03T14:45:38Z" finished-at="2014-07-03T14:45:49Z">
+        <test-method status="PASS" signature="ticketsForBabies()" name="ticketsForBabies" duration-ms="15965" started-at="2014-07-03T16:03:45Z" finished-at="2014-07-03T16:04:01Z">
         </test-method>
       </class>
     </test>
