@@ -11,10 +11,11 @@ import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
 
+import java.util.NoSuchElementException;
 import java.util.concurrent.TimeUnit;
 
 public class TicketsForBabies {
-
+/*
     public static WebDriver driver;
     public static WebDriverWait wait;
 
@@ -23,6 +24,7 @@ public class TicketsForBabies {
     private static final By twoBabies = By.xpath("//*[@id=\"content\"]//div[contains(@class,'infants')]/div/div[2]");
     private static final By search = By.id("start_search");
     private static final By message = By.xpath("//div[contains(@class,'error_popup')]//*[contains(text(),'Младенцев не может быть больше, чем взрослых')]");
+    private static final By book = By.xpath("//*[@id=\"search_results\"]/div[2]/div[3]/div[4]/a[1]/span");
 
     @BeforeSuite
     public void initEnviroment(){
@@ -35,7 +37,7 @@ public class TicketsForBabies {
     }
 
     @Test
-    public void ticketsForBabies(){
+    public void ticketsForBabies() {
 
         Actions builder = new Actions(driver);
         builder.moveToElement(driver.findElement(airAndRailwayTickets));
@@ -50,14 +52,27 @@ public class TicketsForBabies {
         wait.until(ExpectedConditions.elementToBeClickable(search));
         driver.findElement(search).click();
 
+        //driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        //Assert.assertFalse(isElementPresent(book));
+
         wait.until(ExpectedConditions.elementToBeClickable(message));
         String result = driver.findElement(message).getText();
         Assert.assertEquals(result, "Младенцев не может быть больше, чем взрослых(младенцев - 2, взрослых - 1)");
+
+    }
+
+    public boolean isElementPresent(By locator){
+        try {
+            driver.findElement(locator);
+            return true;
+        } catch (NoSuchElementException e) {
+            return false;
+        }
     }
 
     @AfterSuite
     public void shutEnviroment(){
         if (driver != null)
             driver.quit();
-    }
+    }*/
 }

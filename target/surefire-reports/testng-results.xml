@@ -2,26 +2,33 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite1" duration-ms="16319" started-at="2014-07-03T16:03:45Z" finished-at="2014-07-03T16:04:01Z">
+  <suite name="Suite1" duration-ms="7431" started-at="2014-07-04T13:33:03Z" finished-at="2014-07-04T13:33:10Z">
     <groups>
     </groups>
-    <test name="TestStringLength" duration-ms="0" started-at="2014-07-03T16:04:01Z" finished-at="2014-07-03T16:04:01Z">
+    <test name="TestStringLength" duration-ms="0" started-at="2014-07-04T13:33:10Z" finished-at="2014-07-04T13:33:10Z">
     </test>
-    <test name="TestSimilarProducts" duration-ms="0" started-at="2014-07-03T16:04:01Z" finished-at="2014-07-03T16:04:01Z">
-    </test>
-    <test name="TestBuySmartphone" duration-ms="0" started-at="2014-07-03T16:04:01Z" finished-at="2014-07-03T16:04:01Z">
-      <class name="testng.TicketsForBabies">
-        <test-method status="PASS" signature="initEnviroment()" name="initEnviroment" is-config="true" duration-ms="25356" started-at="2014-07-03T16:03:19Z" finished-at="2014-07-03T16:03:45Z">
+    <test name="TestSimilarProducts" duration-ms="7307" started-at="2014-07-04T13:33:03Z" finished-at="2014-07-04T13:33:10Z">
+      <class name="testng.SimilarProducts">
+        <test-method status="PASS" signature="searchSimilarProducts(java.lang.String)" name="searchSimilarProducts" duration-ms="7292" started-at="2014-07-04T13:33:03Z" finished-at="2014-07-04T13:33:10Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Фен-щетка BEURER HTE 40]]>
+              </value>
+            </param>
+          </params>
         </test-method>
-        <test-method status="PASS" signature="shutEnviroment()" name="shutEnviroment" is-config="true" duration-ms="739" started-at="2014-07-03T16:04:01Z" finished-at="2014-07-03T16:04:02Z">
+      </class>
+    </test>
+    <test name="TestBuySmartphone" duration-ms="0" started-at="2014-07-04T13:33:10Z" finished-at="2014-07-04T13:33:10Z">
+      <class name="testng.SimilarProducts">
+        <test-method status="PASS" signature="initEnviroment()" name="initEnviroment" is-config="true" duration-ms="18985" started-at="2014-07-04T13:32:44Z" finished-at="2014-07-04T13:33:03Z">
+        </test-method>
+        <test-method status="PASS" signature="closeEnviroment()" name="closeEnviroment" is-config="true" duration-ms="623" started-at="2014-07-04T13:33:10Z" finished-at="2014-07-04T13:33:11Z">
         </test-method>
       </class>
     </test>
-    <test name="TestTicketsForBabies" duration-ms="15989" started-at="2014-07-03T16:03:45Z" finished-at="2014-07-03T16:04:01Z">
-      <class name="testng.TicketsForBabies">
-        <test-method status="PASS" signature="ticketsForBabies()" name="ticketsForBabies" duration-ms="15965" started-at="2014-07-03T16:03:45Z" finished-at="2014-07-03T16:04:01Z">
-        </test-method>
-      </class>
+    <test name="TestTicketsForBabies" duration-ms="7" started-at="2014-07-04T13:33:03Z" finished-at="2014-07-04T13:33:03Z">
     </test>
   </suite>
 </testng-results>
