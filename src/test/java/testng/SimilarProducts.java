@@ -30,7 +30,6 @@ public class SimilarProducts {
     public Object[][] searchElements(){
         return new Object[][]{{"Фен-щетка BEURER HTE 40"}};
                 //{"Фен BEURER HDE 30"}};
-                //{"Фен"}};
     }
 
     @BeforeSuite
