@@ -24,6 +24,7 @@ public class SimilarProducts {
     private static final By searchButton = By.className("btn-link-i");
     private static final By compare = By.xpath("//*[@id=\"head_banner_container\"]//a[contains(text(),'Добавить')]");
     private static final By product = By.xpath("//*[@id=\"popular_sections\"]//a[contains(text(),'Фены')]");
+    private static final By comparing = By.xpath("//*[@id=\"head_banner_container\"]/div[3]/div/div[1]/div/div/div[3]/div/div[1]/div[3]");
 
     @DataProvider
     public Object[][] searchElements(){
@@ -49,6 +50,7 @@ public class SimilarProducts {
         element.sendKeys(searchElement1);
         driver.findElement(searchButton).click();
         String product1 = driver.findElement(product).getText();
+        String comparing1 = driver.findElement(comparing).getText();
         driver.findElement(compare).click();
 
         element = driver.findElement(inputField);
@@ -56,9 +58,12 @@ public class SimilarProducts {
         element.sendKeys("Фен BEURER HDE 30");
         driver.findElement(searchButton).click();
         String product2 = driver.findElement(product).getText();
+        String comparing2 = driver.findElement(comparing).getText();
         driver.findElement(compare).click();
 
         Assert.assertEquals(product1, product2);
+        Assert.assertEquals(comparing1, comparing2);
+
         //driver.findElement(By.xpath("//*[@id=\"head_banner_container\"]/div[3]/div/div[1]/div/div/div[3]/div/div[1]/div[3]/a")).click();
 
 /*

@@ -2,14 +2,14 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite1" duration-ms="7431" started-at="2014-07-04T13:33:03Z" finished-at="2014-07-04T13:33:10Z">
+  <suite name="Suite1" duration-ms="7186" started-at="2014-07-04T16:15:33Z" finished-at="2014-07-04T16:15:40Z">
     <groups>
     </groups>
-    <test name="TestStringLength" duration-ms="0" started-at="2014-07-04T13:33:10Z" finished-at="2014-07-04T13:33:10Z">
+    <test name="TestStringLength" duration-ms="0" started-at="2014-07-04T16:15:40Z" finished-at="2014-07-04T16:15:40Z">
     </test>
-    <test name="TestSimilarProducts" duration-ms="7307" started-at="2014-07-04T13:33:03Z" finished-at="2014-07-04T13:33:10Z">
+    <test name="TestSimilarProducts" duration-ms="7094" started-at="2014-07-04T16:15:33Z" finished-at="2014-07-04T16:15:40Z">
       <class name="testng.SimilarProducts">
-        <test-method status="PASS" signature="searchSimilarProducts(java.lang.String)" name="searchSimilarProducts" duration-ms="7292" started-at="2014-07-04T13:33:03Z" finished-at="2014-07-04T13:33:10Z">
+        <test-method status="PASS" signature="searchSimilarProducts(java.lang.String)" name="searchSimilarProducts" duration-ms="7079" started-at="2014-07-04T16:15:33Z" finished-at="2014-07-04T16:15:40Z">
           <params>
             <param index="0">
               <value>
@@ -20,15 +20,15 @@
         </test-method>
       </class>
     </test>
-    <test name="TestBuySmartphone" duration-ms="0" started-at="2014-07-04T13:33:10Z" finished-at="2014-07-04T13:33:10Z">
+    <test name="TestBuySmartphone" duration-ms="0" started-at="2014-07-04T16:15:40Z" finished-at="2014-07-04T16:15:40Z">
       <class name="testng.SimilarProducts">
-        <test-method status="PASS" signature="initEnviroment()" name="initEnviroment" is-config="true" duration-ms="18985" started-at="2014-07-04T13:32:44Z" finished-at="2014-07-04T13:33:03Z">
+        <test-method status="PASS" signature="initEnviroment()" name="initEnviroment" is-config="true" duration-ms="22751" started-at="2014-07-04T16:15:10Z" finished-at="2014-07-04T16:15:33Z">
         </test-method>
-        <test-method status="PASS" signature="closeEnviroment()" name="closeEnviroment" is-config="true" duration-ms="623" started-at="2014-07-04T13:33:10Z" finished-at="2014-07-04T13:33:11Z">
+        <test-method status="PASS" signature="closeEnviroment()" name="closeEnviroment" is-config="true" duration-ms="521" started-at="2014-07-04T16:15:40Z" finished-at="2014-07-04T16:15:41Z">
         </test-method>
       </class>
     </test>
-    <test name="TestTicketsForBabies" duration-ms="7" started-at="2014-07-04T13:33:03Z" finished-at="2014-07-04T13:33:03Z">
+    <test name="TestTicketsForBabies" duration-ms="2" started-at="2014-07-04T16:15:33Z" finished-at="2014-07-04T16:15:33Z">
     </test>
   </suite>
 </testng-results>
