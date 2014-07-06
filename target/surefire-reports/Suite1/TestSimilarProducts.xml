@@ -1,4 +1,3 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite hostname="butterfly-PC" name="testng.SimilarProducts" tests="1" failures="0" timestamp="4 Jul 2014 13:15:40 GMT" time="7.094" errors="0">
-  <testcase name="searchSimilarProducts" time="7.079" classname="testng.SimilarProducts"/>
+<testsuite hostname="butterfly-PC" tests="0" failures="0" timestamp="6 Jul 2014 19:56:14 GMT" time="0.0" errors="0">
 </testsuite>

@@ -15,7 +15,7 @@ import java.util.NoSuchElementException;
 import java.util.concurrent.TimeUnit;
 
 public class TicketsForBabies {
-
+/*
     public static WebDriver driver;
     public static WebDriverWait wait;
 
@@ -55,11 +55,12 @@ public class TicketsForBabies {
         wait.until(ExpectedConditions.elementToBeClickable(message));
         String result = driver.findElement(message).getText();
         Assert.assertEquals(result, "Младенцев не может быть больше, чем взрослых(младенцев - 2, взрослых - 1)");
+
     }
 
     @AfterSuite
     public void shutEnviroment(){
         if (driver != null)
             driver.quit();
-    }
+    }*/
 }

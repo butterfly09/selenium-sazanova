@@ -16,7 +16,7 @@ import org.testng.annotations.Test;
 import java.util.concurrent.TimeUnit;
 
 public class SimilarProducts {
-
+/*
     public static WebDriver driver;
     public static WebDriverWait wait;
 
@@ -30,6 +30,7 @@ public class SimilarProducts {
     public Object[][] searchElements(){
         return new Object[][]{{"Фен-щетка BEURER HTE 40"}};
                 //{"Фен BEURER HDE 30"}};
+                //{"Фен"}};
     }
 
     @BeforeSuite
@@ -92,11 +93,11 @@ public class SimilarProducts {
         String result2 = driver.findElement(By.xpath("//*[@id=\"head_banner_container\"]/div[3]/div/div/div[2]/table/tbody/tr[1]/td[3]")).getText();
         Assert.assertEquals(result2, "обычный");
 */
-    }
+    //}
 
-    @AfterSuite
-    public void closeEnviroment(){
-        if (driver != null)
-        driver.quit();
-    }
+    //@AfterSuite
+    //public void closeEnviroment(){
+     //   if (driver != null)
+       // driver.quit();
+    //}
 }
