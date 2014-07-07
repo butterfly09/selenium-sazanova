@@ -5,7 +5,7 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import pages.AddSimilarProductPage;
 
-public class AddSimilarProducts extends BaseTest{
+public class AddSimilarProductsTest extends BaseTest{
 
     @DataProvider(name = "products")
     public Object [][] similarProduct(){

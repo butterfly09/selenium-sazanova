@@ -3,8 +3,9 @@ package testng;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import pages.TicketsPage;
+import utils.Log4Test;
 
-public class BuyTickets extends BaseTest{
+public class BuyTicketsTest extends BaseTest{
 
     @Test
     public void buy2infantsTickets(){
@@ -12,6 +13,6 @@ public class BuyTickets extends BaseTest{
         ticketsPage.open();
         ticketsPage.searchTravel();
         ticketsPage.buyTickets(1,2);
-        Assert.assertTrue(ticketsPage.isError());
+        Assert.assertTrue(ticketsPage.isError(), Log4Test.error("You cann't order tickets for 2 babies and adult"));
     }
 }

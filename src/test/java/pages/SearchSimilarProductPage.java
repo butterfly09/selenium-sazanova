@@ -3,8 +3,11 @@ package pages;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import utils.Log4Test;
 
 public class SearchSimilarProductPage extends BasePage{
+
+    //Log4Test.info
 
     private static final By inputField = By.className("header-search-input-text");
     private static final By searchButton = By.className("btn-link-i");
