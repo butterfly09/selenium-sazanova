@@ -10,8 +10,8 @@ public class BuyTickets extends BaseTest{
     public void buy2infantsTickets(){
         TicketsPage ticketsPage = new TicketsPage(driver);
         ticketsPage.open();
-        //ticketsPage.searchTravel();
-        ticketsPage.buyTickets(1,1,2);
+        ticketsPage.searchTravel();
+        ticketsPage.buyTickets(1,2);
         Assert.assertTrue(ticketsPage.isError());
     }
 }
