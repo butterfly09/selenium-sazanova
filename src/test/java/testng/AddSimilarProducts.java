@@ -21,7 +21,6 @@ public class AddSimilarProducts extends BaseTest{
         addSimilarProductPage.open();
         addSimilarProductPage.addSimilarProduct(product1);
         addSimilarProductPage.addSimilarProduct(product2);
-        //addSimilarProductPage.isCompare();
         Assert.assertTrue( addSimilarProductPage.isCompare() );
     }
 }
