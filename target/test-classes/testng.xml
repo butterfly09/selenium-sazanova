@@ -3,26 +3,13 @@
 <suite name="Suite1" verbose="1" >
     <test name="TestTicketsForBabies" >
         <classes>
-            <class name="tickest4babies.testng.TicketsForBabies" />
+            <class name="tickest4babies.testng.BuyTickets" />
         </classes>
     </test>
 
     <test name="TestSimilarProducts" >
         <classes>
-            <class name="similarProducts.testng.SimilarProducts" />
+            <class name="similarProducts.testng.SearchProductTest" />
         </classes>
     </test>
-
-    <test name="TestStringLength" >
-        <classes>
-            <class name="testng.StringLength" />
-        </classes>
-    </test>
-
-    <test name="TestBuySmartphone" >
-        <classes>
-            <class name="testng.BuySmartphone" />
-        </classes>
-    </test>
-
 </suite>

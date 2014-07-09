@@ -18,8 +18,8 @@ public class SearchProductPage extends BasePage{
     private static final By productNew = By.xpath("//*[@id=\"head_banner_container\"]/div[3]/div/div[1]/div/div/div[3]/div/div[2]/div[1]/a");
     private static final By add = By.xpath("//*[@id=\"head_banner_container\"]//a[contains(text(),'Добавить')]");
     private static final By comparing = By.xpath("//a[contains(@href,'comparison')]");
-    //private static final By firstProduct = By.xpath("//*[@id=\"head_banner_container\"]/div[3]/div/div/div[2]/table/thead/tr[1]/td[2]/div/div[2]/a");
-    //private static final By secondProduct = By.xpath("//*[@id=\"head_banner_container\"]/div[3]/div/div/div[2]/table/thead/tr[1]/td[3]/div/div[2]/a");
+    private static final By firstProduct = By.xpath("//*[@id=\"head_banner_container\"]/div[3]/div/div/div[2]/table/thead/tr[1]/td[2]/div/div[2]/a");
+    private static final By secondProduct = By.xpath("//*[@id=\"head_banner_container\"]/div[3]/div/div/div[2]/table/thead/tr[1]/td[3]/div/div[2]/a");
     private static final String findProduct = "//div[@class='item available']/div[@class='title'][%s]/a";
 
     public SearchProductPage(WebDriver driver){
@@ -45,14 +45,14 @@ public class SearchProductPage extends BasePage{
         driver.findElement(comparing).click();
     }
 
-    /*public String findFirstProduct(){
+    public String findFirstProduct(){
         driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
         return driver.findElement(firstProduct).getText();
     }
 
     public String findSecondProduct(){
         return driver.findElement(secondProduct).getText();
-    }*/
+    }
 
     public List<String> findProduct(){
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
