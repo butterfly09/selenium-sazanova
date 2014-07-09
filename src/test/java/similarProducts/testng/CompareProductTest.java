@@ -38,19 +38,12 @@ public class CompareProductTest extends BaseTest{
         compareProductsPage.openCompressionPage();
         Log4Test.info("Страница сравнения открыта");
 
-       List<Map<String,String>> list = compareProductsPage.compare();
+        List<Map<String,String>> list = compareProductsPage.compare();
         Map<String,String> differences1 = list.get(0);
         Map<String,String> differences2 = list.get(1);
         Map<String,String> differences11 = list.get(2);
         Map<String,String> differences22 = list.get(3);
-        System.out.println( differences1);
-        System.out.println(differences11);
-        for (Map.Entry<String, String> entry : differences1.entrySet()) {
-            Assert.assertTrue(differences1.get(entry.getKey()).equals(differences11.get(entry.getKey())));
-        }
-        for (Map.Entry<String, String> entry : differences2.entrySet()) {
-            Assert.assertTrue(differences2.get(entry.getKey()).equals(differences22.get(entry.getKey())));
-        }
-
+        Assert.assertTrue(differences1.equals(differences11));
+        Assert.assertTrue(differences2.equals(differences22));
     }
 }

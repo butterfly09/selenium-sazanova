@@ -47,8 +47,10 @@ public class CompareProductsPage extends SearchProductPage{
         for(WebElement trElement : tr_collection2)
         {
             List<WebElement> td_collection2=trElement.findElements(By.xpath("td"));
-            product1PropertiesForSite.put(td_collection2.get(0).getText(),td_collection2.get(1).getText());
-            product2PropertiesForSite.put(td_collection2.get(0).getText(),td_collection2.get(2).getText());
+            if (!td_collection2.get(0).getText().equals("")) {
+                product1PropertiesForSite.put(td_collection2.get(0).getText(),td_collection2.get(1).getText());
+                product2PropertiesForSite.put(td_collection2.get(0).getText(),td_collection2.get(2).getText());
+            }
         }
         list.add(product1PropertiesForSite);
         list.add(product2PropertiesForSite);
