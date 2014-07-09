@@ -4,6 +4,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
+import similarProducts.selenium.WebDriverFactory;
+import similarProducts.utils.PropertyLoader;
 
 public class BaseTest {
 
@@ -11,7 +13,8 @@ public class BaseTest {
 
     @BeforeSuite
     public void initEnviroment(){
-        driver = new FirefoxDriver();
+        driver = WebDriverFactory.initDriver(PropertyLoader.loadProperty("browser.name"));
+        //driver = new FirefoxDriver();
         driver.manage().window().maximize();
     }
 

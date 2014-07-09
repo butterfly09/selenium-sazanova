@@ -8,6 +8,8 @@ import java.util.*;
 
 public class CompareProductsPage extends SearchProductPage{
 
+    //private static final By firstProduct = By.xpath("//td[@class='detail-title']");
+
     public CompareProductsPage(WebDriver driver){
         super(driver);
     }

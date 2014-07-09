@@ -144,3 +144,8 @@
 2014-07-09 16:35:53 Log4Test [ERROR] INFO: "Второй продукт найден."
 2014-07-09 16:35:53 Log4Test [ERROR] INFO: "Второй продукт добавлен к сравнению"
 2014-07-09 16:35:54 Log4Test [ERROR] INFO: "Страница сравнения открыта"
+2014-07-09 20:52:34 Log4Test [ERROR] ERROR: "WebDriver not defined" !
+2014-07-09 20:54:35 Log4Test [ERROR] ERROR: "WebDriver not defined" !
+2014-07-09 21:00:12 Log4Test [ERROR] ERROR: "WebDriver not defined" !
+2014-07-09 21:06:48 Log4Test [ERROR] ERROR: "WebDriver not defined" !
+2014-07-09 21:07:48 Log4Test [ERROR] ERROR: "WebDriver not defined" !
