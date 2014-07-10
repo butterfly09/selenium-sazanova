@@ -8,16 +8,8 @@ import similarProducts.utils.Log4Test;
 
 import java.util.List;
 import java.util.Map;
-import java.util.TreeMap;
 
 public class CompareProductTest extends BaseTest{
-
-    @DataProvider(name = "products")
-    public Object [][] similarProduct(){
-        return new Object[][]{
-                {"Фен-щетка BEURER HTE 40", "Фен BEURER HDE 30"}
-        };
-    }
 
     @Test(dataProvider = "products")
     public void compare2products(String product1, String product2){
