@@ -33,12 +33,9 @@ public class SearchProductTest extends BaseTest{
         similarProductPage.openCompressionPage();
         Log4Test.info("Страница с сравнением открыта.");
 
-        Assert.assertEquals( similarProductPage.findFirstProduct(), product1, Log4Test.info("Первый продукт добавлен к сравнению."));
-        Assert.assertEquals( similarProductPage.findSecondProduct(), product2, Log4Test.info("Второй продукт добавлен к сравнению."));
-
-        //SearchProductPage searchProductPage = new SearchProductPage(driver);
-        //List<String> products = searchProductPage.findProduct();
-        //Assert.assertEquals( products.get(0), product1 );
-        //Assert.assertEquals( products.get(1), product2 );
+        SearchProductPage searchProductPage = new SearchProductPage(driver);
+        List<String> products = searchProductPage.findProduct();
+        Assert.assertEquals( products.get(0), product1, Log4Test.info("Первый продукт добавлен к сравнению.") );
+        Assert.assertEquals( products.get(1), product2, Log4Test.info("Второй продукт добавлен к сравнению.") );
     }
 }

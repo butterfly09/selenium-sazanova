@@ -7,9 +7,15 @@
         </classes>
     </test>
 
-    <test name="TestSimilarProducts" >
+    <test name="TestSearchSimilarProducts" >
         <classes>
             <class name="similarProducts.testng.SearchProductTest" />
+        </classes>
+    </test>
+
+    <test name="TestcompareSimilarProducts" >
+        <classes>
+            <class name="similarProducts.testng.CompareProductTest" />
         </classes>
     </test>
 </suite>

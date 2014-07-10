@@ -15,12 +15,10 @@ public class SearchProductPage extends BasePage{
 
     private static final By inputField = By.className("header-search-input-text");
     private static final By searchButton = By.className("btn-link-i");
-    private static final By productNew = By.xpath("//*[@id=\"head_banner_container\"]/div[3]/div/div[1]/div/div/div[3]/div/div[2]/div[1]/a");
+    private static final By productNew = By.className("g-i-list-title");
     private static final By add = By.xpath("//*[@id=\"head_banner_container\"]//a[contains(text(),'Добавить')]");
     private static final By comparing = By.xpath("//a[contains(@href,'comparison')]");
-    private static final By firstProduct = By.xpath("//*[@id=\"head_banner_container\"]/div[3]/div/div/div[2]/table/thead/tr[1]/td[2]/div/div[2]/a");
-    private static final By secondProduct = By.xpath("//*[@id=\"head_banner_container\"]/div[3]/div/div/div[2]/table/thead/tr[1]/td[3]/div/div[2]/a");
-    private static final String findProduct = "//div[@class='item available']/div[@class='title'][%s]/a";
+    private static final String findProduct = "//td[%s]//div[@class='item available']//div[@class='title']//a";
 
     public SearchProductPage(WebDriver driver){
         super(driver);
@@ -45,20 +43,11 @@ public class SearchProductPage extends BasePage{
         driver.findElement(comparing).click();
     }
 
-    public String findFirstProduct(){
-        driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
-        return driver.findElement(firstProduct).getText();
-    }
-
-    public String findSecondProduct(){
-        return driver.findElement(secondProduct).getText();
-    }
-
     public List<String> findProduct(){
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         List<String> list = new ArrayList<String>();
-        list.add( driver.findElement(By.xpath(String.format(findProduct,1))).getText());
-        list.add(driver.findElement(By.xpath(String.format(findProduct,2))).getText());
+        list.add( driver.findElement(By.xpath(String.format(findProduct,2))).getText());
+        list.add(driver.findElement(By.xpath(String.format(findProduct,3))).getText());
         return list;
     }
 }
