@@ -10,7 +10,8 @@ import similarProducts.pages.BasePage;
 public class TicketsPage extends BasePage {
 
     private static final By airAndRailwayTickets = By.id("fatmenu_14");
-    private static final By KievVienna = By.xpath("//*[@id=\"fatmenu_14\"]//a[contains(text(),'Киев-Вена')]");
+    //private static final By KievVienna = By.xpath("//*[@id=\"fatmenu_14\"]//a[contains(text(),'Киев') AND contains(text(),'Вена')]");
+    private static final By KievVienna = By.xpath("//*[@id=\"fatmenu_14\"]/div/div/ol/li[1]/ul/li[9]/a");
     private static final String adultTicket = "//div[@class='adults_block passengers_wrapper']/div[@class='persons']/div[%d]";
     //private static final String childTicket = "//div[@data-field='children']/div[@class='persons']/div[%d]";
     private static final String infantsTicket = "//div[@data-field='infants']/div[@class='persons']/div[%d]";
