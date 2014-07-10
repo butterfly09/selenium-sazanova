@@ -23,21 +23,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="SearchProductPage.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="SearchProductPage.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/similarProducts/pages/SearchProductPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="47" max-vertical-offset="816">
-              <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.22894168" vertical-offset="47" max-vertical-offset="833">
+              <caret line="18" column="4" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="4" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pom.xml" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="pom.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.55939525" vertical-offset="421" max-vertical-offset="952">
-              <caret line="40" column="0" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="421" max-vertical-offset="952">
+              <caret line="48" column="17" selection-start-line="48" selection-start-column="17" selection-end-line="48" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -98,7 +98,6 @@
         <option value="$PROJECT_DIR$/src/test/java/tickest4babies/utils/Log4Test.java" />
         <option value="$PROJECT_DIR$/src/test/java/similarProducts/utils/Log4Test.java" />
         <option value="$PROJECT_DIR$/src/test/java/tickest4babies/testng/BuyTickets.java" />
-        <option value="$PROJECT_DIR$/src/test/java/similarProducts/pages/SearchProductPage.java" />
         <option value="$PROJECT_DIR$/src/test/resources/testng.xml" />
         <option value="$PROJECT_DIR$/src/test/java/similarProducts/pages/CompareProductsPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/similarProducts/testng/BaseTest.java" />
@@ -106,6 +105,7 @@
         <option value="$PROJECT_DIR$/src/test/java/similarProducts/testng/CompareProductTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/tickest4babies/pages/TicketsPage.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/similarProducts/pages/SearchProductPage.java" />
       </list>
     </option>
   </component>
@@ -772,7 +772,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1190">
           <caret line="21" column="4" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="4" />
           <folding>
-            <element signature="e#1863#1871#0" expanded="false" />
+            <element signature="e#2000#2008#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -808,7 +808,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="1020" max-vertical-offset="1190">
           <caret line="60" column="0" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
           <folding>
-            <element signature="e#1863#1871#0" expanded="false" />
+            <element signature="e#2000#2008#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -834,7 +834,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="544">
           <caret line="4" column="38" selection-start-line="4" selection-start-column="38" selection-end-line="4" selection-end-column="38" />
           <folding>
-            <element signature="e#1863#1871#0" expanded="false" />
+            <element signature="e#2000#2008#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1048,6 +1048,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="421" max-vertical-offset="952">
+          <caret line="48" column="17" selection-start-line="48" selection-start-column="17" selection-end-line="48" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/similarProducts/testng/SearchProductTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="544">
@@ -1058,16 +1066,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/similarProducts/pages/SearchProductPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="47" max-vertical-offset="816">
-          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.55939525" vertical-offset="421" max-vertical-offset="952">
-          <caret line="40" column="0" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.22894168" vertical-offset="47" max-vertical-offset="833">
+          <caret line="18" column="4" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="4" />
           <folding />
         </state>
       </provider>
