@@ -17,7 +17,8 @@ public class SearchProductPage extends BasePage{
     private static final By searchButton = By.className("btn-link-i");
     private static final By productNew = By.className("g-i-list-title");
     //private static final By add = By.xpath("//*[@id=\"head_banner_container\"]//a[contains(text(),'Добавить')]");
-    private static final By add = By.xpath("//*[@id=\"head_banner_container\"]/div[3]/div/div[1]/div/div/div[3]/div/div[1]/div[3]/a");
+    //private static final By add = By.xpath("//*[@id=\"head_banner_container\"]/div[3]/div/div[1]/div/div/div[3]/div/div[1]/div[3]/a");
+    private static final By add = By.name("tocomparison");
     private static final By comparing = By.xpath("//a[contains(@href,'comparison')]");
     private static final String findProduct = "//td[%s]//div[@class='item available']//div[@class='title']//a";
 

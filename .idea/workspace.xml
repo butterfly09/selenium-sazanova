@@ -26,8 +26,8 @@
       <file leaf-file-name="SearchProductPage.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/similarProducts/pages/SearchProductPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.26565874" vertical-offset="47" max-vertical-offset="833">
-              <caret line="19" column="4" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="4" />
+            <state vertical-scroll-proportion="0.33909288" vertical-offset="30" max-vertical-offset="850">
+              <caret line="20" column="55" selection-start-line="20" selection-start-column="55" selection-end-line="20" selection-end-column="55" />
               <folding />
             </state>
           </provider>
@@ -47,7 +47,7 @@
         <entry file="file://$PROJECT_DIR$/src/test/java/similarProducts/testng/SearchProductTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="544">
-              <caret line="18" column="45" selection-start-line="18" selection-start-column="45" selection-end-line="18" selection-end-column="45" />
+              <caret line="21" column="45" selection-start-line="21" selection-start-column="45" selection-end-line="21" selection-end-column="45" />
               <folding />
             </state>
           </provider>
@@ -359,7 +359,7 @@
       <recent name="tickest4babies.pages" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.SearchProductTest">
+  <component name="RunManager" selected="TestNG.SearchProductTest.searchSimilarProducts">
     <configuration default="false" name="SearchProductTest.searchSimilarProducts" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <module name="FinishProgect" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -665,11 +665,11 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="TestNG.SearchProductTest" />
-        <item index="1" class="java.lang.String" itemvalue="TestNG.BuyTickets.buy2infantsTickets" />
-        <item index="2" class="java.lang.String" itemvalue="TestNG.CompareProductTest" />
-        <item index="3" class="java.lang.String" itemvalue="TestNG.CompareProductTest.compare2products" />
-        <item index="4" class="java.lang.String" itemvalue="TestNG.SearchProductTest.searchSimilarProducts" />
+        <item index="0" class="java.lang.String" itemvalue="TestNG.SearchProductTest.searchSimilarProducts" />
+        <item index="1" class="java.lang.String" itemvalue="TestNG.SearchProductTest" />
+        <item index="2" class="java.lang.String" itemvalue="TestNG.BuyTickets.buy2infantsTickets" />
+        <item index="3" class="java.lang.String" itemvalue="TestNG.CompareProductTest" />
+        <item index="4" class="java.lang.String" itemvalue="TestNG.CompareProductTest.compare2products" />
       </list>
     </recent_temporary>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
@@ -772,7 +772,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1190">
           <caret line="21" column="4" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="4" />
           <folding>
-            <element signature="e#2000#2008#0" expanded="false" />
+            <element signature="e#2061#2069#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -808,7 +808,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="1020" max-vertical-offset="1190">
           <caret line="60" column="0" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
           <folding>
-            <element signature="e#2000#2008#0" expanded="false" />
+            <element signature="e#2061#2069#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -834,7 +834,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="544">
           <caret line="4" column="38" selection-start-line="4" selection-start-column="38" selection-end-line="4" selection-end-column="38" />
           <folding>
-            <element signature="e#2000#2008#0" expanded="false" />
+            <element signature="e#2061#2069#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1048,14 +1048,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/similarProducts/testng/SearchProductTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="544">
-          <caret line="18" column="45" selection-start-line="18" selection-start-column="45" selection-end-line="18" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="421" max-vertical-offset="952">
@@ -1064,10 +1056,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/similarProducts/testng/SearchProductTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="544">
+          <caret line="21" column="45" selection-start-line="21" selection-start-column="45" selection-end-line="21" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/similarProducts/pages/SearchProductPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.26565874" vertical-offset="47" max-vertical-offset="833">
-          <caret line="19" column="4" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="4" />
+        <state vertical-scroll-proportion="0.33909288" vertical-offset="30" max-vertical-offset="850">
+          <caret line="20" column="55" selection-start-line="20" selection-start-column="55" selection-end-line="20" selection-end-column="55" />
           <folding />
         </state>
       </provider>
