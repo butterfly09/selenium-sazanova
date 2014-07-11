@@ -46,7 +46,7 @@
     <build>
         <resources>
             <resource>
-                <directory>scr/main/resources</directory>
+                <directory>/scr/main/resources</directory>
                 <filtering>true</filtering>
             </resource>
         </resources>

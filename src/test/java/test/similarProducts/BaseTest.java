@@ -6,11 +6,12 @@ import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.DataProvider;
 import selenium.WebDriverFactory;
+import selenium.WebDriverWrapper;
 import utils.PropertyLoader;
 
 public class BaseTest {
 
-    public static WebDriver driver;
+    public static WebDriverWrapper driver;
 
     @DataProvider(name = "products")
     public static final Object [][] similarProduct(){

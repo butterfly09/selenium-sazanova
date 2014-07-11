@@ -3,6 +3,7 @@ package pages;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import selenium.WebDriverWrapper;
 
 import java.util.*;
 
@@ -17,7 +18,7 @@ public class CompareProductsPage extends SearchProductPage{
     private static final int SECOND_ELEMENT = 1;
     private static final int THIRD_ELEMENT = 2;
 
-    public CompareProductsPage(WebDriver driver){
+    public CompareProductsPage(WebDriverWrapper driver){
         super(driver);
     }
 
