@@ -3,19 +3,19 @@
 <suite name="Suite1" verbose="1" >
     <test name="TestTicketsForBabies" >
         <classes>
-            <class name="tickest4babies.testng.BuyTickets" />
+            <class name="test.tickets4babies.BuyTickets"/>
         </classes>
     </test>
 
     <test name="TestSearchSimilarProducts" >
         <classes>
-            <class name="similarProducts.testng.SearchProductTest" />
+            <class name="test.similarProducts.SearchProductTest"/>
         </classes>
     </test>
 
     <test name="TestcompareSimilarProducts" >
         <classes>
-            <class name="similarProducts.testng.CompareProductTest" />
+            <class name="test.similarProducts.CompareProductTest"/>
         </classes>
     </test>
 </suite>
