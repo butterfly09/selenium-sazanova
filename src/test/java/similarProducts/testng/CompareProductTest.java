@@ -11,31 +11,28 @@ import java.util.Map;
 
 public class CompareProductTest extends BaseTest{
 
+    private static final int FIRST_ELEMENT = 0;
+    private static final int SECOND_ELEMENT = 1;
+
     @Test(dataProvider = "products")
     public void compare2products(String product1, String product2){
         CompareProductsPage compareProductsPage = new CompareProductsPage(driver);
         compareProductsPage.open();
-        Log4Test.info("Страница открыта.");
 
         compareProductsPage.searchProduct(product1);
-        Log4Test.info("Первый продукт найден.");
         compareProductsPage.addToComprasion();
-        Log4Test.info("Первый продукт добавлен к сравнению");
 
         compareProductsPage.searchProduct(product2);
-        Log4Test.info("Второй продукт найден.");
         compareProductsPage.addToComprasion();
-        Log4Test.info("Второй продукт добавлен к сравнению");
 
         compareProductsPage.openCompressionPage();
-        Log4Test.info("Страница сравнения открыта");
 
         List<Map<String,String>> list1 = compareProductsPage.compare();
-        Map<String,String> differences1 = list1.get(0);
-        Map<String,String> differences2 = list1.get(1);
+        Map<String,String> differences1 = list1.get(FIRST_ELEMENT);
+        Map<String,String> differences2 = list1.get(SECOND_ELEMENT);
         List<Map<String,String>> list2 = compareProductsPage.compareForSite();
-        Map<String,String> differences11 = list2.get(0);
-        Map<String,String> differences22 = list2.get(1);
+        Map<String,String> differences11 = list2.get(FIRST_ELEMENT);
+        Map<String,String> differences22 = list2.get(SECOND_ELEMENT);
         Assert.assertTrue(differences1.equals(differences11), Log4Test.info("Отличия первого продукта совпадают."));
         Assert.assertTrue(differences2.equals(differences22), Log4Test.info("Отличия второго продукта совпадают."));
     }

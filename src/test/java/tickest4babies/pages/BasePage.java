@@ -1,6 +1,7 @@
 package tickest4babies.pages;
 
 import org.openqa.selenium.WebDriver;
+import tickest4babies.utils.Log4Test;
 
 public class BasePage {
 
@@ -13,6 +14,7 @@ public class BasePage {
 
     public void open(){
         driver.get(URL);
+        Log4Test.info("Страница открыта.");
     }
 
     public boolean isOpen(){

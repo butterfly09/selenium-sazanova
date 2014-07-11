@@ -6,6 +6,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import similarProducts.utils.Log4Test;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -22,6 +23,9 @@ public class SearchProductPage extends BasePage{
     private static final By comparing = By.xpath("//a[contains(@href,'comparison')]");
     private static final String findProduct = "//td[%s]//div[@class='item available']//div[@class='title']//a";
 
+    private static final int COLOMN_NUMBER_FOR_PRODUCT1 = 2;
+    private static final int COLOMN_NUMBER_FOR_PRODUCT2 = 3;
+
     public SearchProductPage(WebDriver driver){
         super(driver);
     }
@@ -31,6 +35,7 @@ public class SearchProductPage extends BasePage{
         element.clear();
         element.sendKeys(product);
         driver.findElement(searchButton).click();
+        Log4Test.info("Продукт найден.");
         String findProduct = driver.findElement(productNew).getText();
         return findProduct;
     }
@@ -38,18 +43,20 @@ public class SearchProductPage extends BasePage{
      public void addToComprasion(){
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         driver.findElement(add).click();
+        Log4Test.info("Продукт добавлен к сравнению");
     }
 
     public void openCompressionPage(){
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         driver.findElement(comparing).click();
+        Log4Test.info("Страница с сравнением открыта.");
     }
 
     public List<String> findProduct(){
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         List<String> list = new ArrayList<String>();
-        list.add( driver.findElement(By.xpath(String.format(findProduct,2))).getText());
-        list.add(driver.findElement(By.xpath(String.format(findProduct,3))).getText());
+        list.add( driver.findElement(By.xpath(String.format(findProduct,COLOMN_NUMBER_FOR_PRODUCT1))).getText());
+        list.add(driver.findElement(By.xpath(String.format(findProduct,COLOMN_NUMBER_FOR_PRODUCT2))).getText());
         return list;
     }
 }

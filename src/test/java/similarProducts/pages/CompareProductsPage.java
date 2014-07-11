@@ -13,6 +13,10 @@ public class CompareProductsPage extends SearchProductPage{
     private static final By td = By.tagName("td");
     private static final By differences = By.className("xhr");
 
+    private static final int FIRST_ELEMENT = 0;
+    private static final int SECOND_ELEMENT = 1;
+    private static final int THIRD_ELEMENT = 2;
+
     public CompareProductsPage(WebDriver driver){
         super(driver);
     }
@@ -30,8 +34,8 @@ public class CompareProductsPage extends SearchProductPage{
 
         for (WebElement trElement : tr_collection) {
             List<WebElement> td_collection = trElement.findElements(td);
-            product1Properties.put(td_collection.get(0).getText(), td_collection.get(1).getText());
-            product2Properties.put(td_collection.get(0).getText(), td_collection.get(2).getText());
+            product1Properties.put(td_collection.get(FIRST_ELEMENT).getText(), td_collection.get(SECOND_ELEMENT).getText());
+            product2Properties.put(td_collection.get(FIRST_ELEMENT).getText(), td_collection.get(THIRD_ELEMENT).getText());
         }
 
         for (Map.Entry<String, String> entry : product1Properties.entrySet()) {
@@ -54,9 +58,9 @@ public class CompareProductsPage extends SearchProductPage{
         for(WebElement trElement : tr_collection2)
         {
             List<WebElement> td_collection2=trElement.findElements(td);
-            if (!td_collection2.get(0).getText().equals("")) {
-                product1PropertiesForSite.put(td_collection2.get(0).getText(),td_collection2.get(1).getText());
-                product2PropertiesForSite.put(td_collection2.get(0).getText(),td_collection2.get(2).getText());
+            if (!td_collection2.get(FIRST_ELEMENT).getText().equals("")) {
+                product1PropertiesForSite.put(td_collection2.get(FIRST_ELEMENT).getText(),td_collection2.get(SECOND_ELEMENT).getText());
+                product2PropertiesForSite.put(td_collection2.get(FIRST_ELEMENT).getText(),td_collection2.get(THIRD_ELEMENT).getText());
             }
         }
         list2.add(product1PropertiesForSite);

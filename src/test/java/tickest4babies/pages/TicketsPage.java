@@ -5,7 +5,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import similarProducts.pages.BasePage;
+import tickest4babies.utils.Log4Test;
 
 public class TicketsPage extends BasePage {
 
@@ -31,6 +31,7 @@ public class TicketsPage extends BasePage {
         WebDriverWait wait = new WebDriverWait(driver, 20);
         wait.until(ExpectedConditions.elementToBeClickable(KievVienna));
         driver.findElement(KievVienna).click();
+        Log4Test.info("Направление найдено.");
     }
 
     public void buyTickets(int adults, int infants){
