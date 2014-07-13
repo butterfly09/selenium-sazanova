@@ -10,7 +10,8 @@ import selenium.WebDriverWrapper;
 import utils.PropertyLoader;
 
 public class BaseTest {
-    public static WebDriverWrapper driver;
+    //public static WebDriverWrapper driver;
+    public static WebDriver driver;
 
     @DataProvider(name = "products")
     public static final Object [][] similarProduct(){
@@ -21,8 +22,8 @@ public class BaseTest {
 
     @BeforeSuite
     public void initEnviroment(){
-        //driver = new FirefoxDriver();
-        driver = WebDriverFactory.initDriver(PropertyLoader.loadProperty("browser.name"));
+        driver = new FirefoxDriver();
+        //driver = WebDriverFactory.initDriver(PropertyLoader.loadProperty("browser.name"));
         driver.manage().window().maximize();
     }
 
