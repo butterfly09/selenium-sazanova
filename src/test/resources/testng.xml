@@ -1,6 +1,12 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
 <suite name="Suite1" verbose="1" >
+    <test name="TestTicketsForBabies" >
+        <classes>
+            <class name="tests.tickets4babies.BuyTicketsTest"/>
+        </classes>
+    </test>
+
     <test name="TestSearchSimilarProducts" >
         <classes>
             <class name="tests.similarProducts.SearchProductTest"/>
@@ -12,11 +18,4 @@
             <class name="tests.similarProducts.CompareProductTest"/>
         </classes>
     </test>
-
-    <test name="TestTicketsForBabies" >
-        <classes>
-            <class name="tests.tickets4babies.BuyTicketsTest"/>
-        </classes>
-    </test>
-
 </suite>

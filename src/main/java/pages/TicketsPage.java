@@ -7,8 +7,6 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import utils.Log4Test;
 
-import java.util.concurrent.TimeUnit;
-
 public class TicketsPage extends BasePage {
     private static final By airAndRailwayTickets = By.id("fatmenu_14");
     //private static final By KievVienna = By.xpath("//*[@id=\"fatmenu_14\"]//a[contains(text(),'Киев') AND contains(text(),'Вена')]");
@@ -36,7 +34,7 @@ public class TicketsPage extends BasePage {
     }
 
     public void buyTickets(int adults, int infants){
-        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+
         driver.findElement(By.xpath(String.format(adultTicket,adults))).click();
         //driver.findElement(By.xpath(String.format(childTicket,children))).click();
         driver.findElement(By.xpath(String.format(infantsTicket,infants))).click();
