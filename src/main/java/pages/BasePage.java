@@ -1,13 +1,14 @@
 package pages;
 
 import org.openqa.selenium.WebDriver;
+import selenium.WebDriverWrapper;
 import utils.Log4Test;
 
 public class BasePage {
     protected String URL = "http://rozetka.com.ua/";
-    protected WebDriver driver;
+    protected WebDriverWrapper driver;
 
-    public BasePage(WebDriver driver){
+    public BasePage(WebDriverWrapper driver){
         this.driver = driver;
     }
 

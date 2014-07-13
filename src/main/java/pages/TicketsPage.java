@@ -5,6 +5,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import selenium.WebDriverWrapper;
 import utils.Log4Test;
 
 import java.util.concurrent.TimeUnit;
@@ -19,7 +20,7 @@ public class TicketsPage extends BasePage {
     private static final By searchButton = By.id("start_search");
     private static final By errorMessage = By.xpath("//div[contains(@class,'error_popup')]//*[contains(text(),'Младенцев не может быть больше, чем взрослых')]");
 
-    public TicketsPage(WebDriver driver){
+    public TicketsPage(WebDriverWrapper driver){
         super(driver);
     }
 

@@ -3,6 +3,7 @@ package pages;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import selenium.WebDriverWrapper;
 import utils.Log4Test;
 
 import java.util.ArrayList;
@@ -22,7 +23,7 @@ public class SearchProductPage extends BasePage {
     private static final int COLOMN_NUMBER_FOR_PRODUCT1 = 2;
     private static final int COLOMN_NUMBER_FOR_PRODUCT2 = 3;
 
-    public SearchProductPage(WebDriver driver){
+    public SearchProductPage(WebDriverWrapper driver){
         super(driver);
     }
 
