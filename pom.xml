@@ -8,6 +8,21 @@
     <artifactId>selenium-sazanova</artifactId>
     <version>1.0-SNAPSHOT</version>
 
+    <profiles>
+        <profile>
+            <id>firefox_local</id>
+            <properties>
+                <browser.name>firefox</browser.name>
+            </properties>
+        </profile>
+        <profile>
+            <id>chrome_local</id>
+            <properties>
+                <browser.name>chrome</browser.name>
+            </properties>
+        </profile>
+    </profiles>
+
     <dependencies>
         <dependency>
             <groupId>org.testng</groupId>
@@ -29,6 +44,13 @@
     </dependencies>
 
     <build>
+        <resources>
+            <resource>
+                <directory>src/main/resources</directory>
+                <filtering>true</filtering>
+            </resource>
+        </resources>
+
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
