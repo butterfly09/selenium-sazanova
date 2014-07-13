@@ -5,6 +5,8 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.DataProvider;
+import selenium.WebDriverFactory;
+import utils.PropertyLoader;
 
 public class BaseTest {
     public static WebDriver driver;
