@@ -7,11 +7,11 @@
         </classes>
     </test>
 
-    <!--<test name="TestCompareSimilarProducts" >
+    <test name="TestCompareSimilarProducts" >
         <classes>
             <class name="tests.similarProducts.CompareProductTest"/>
         </classes>
-    </test>-->
+    </test>
 
     <test name="TestTicketsForBabies" >
         <classes>
