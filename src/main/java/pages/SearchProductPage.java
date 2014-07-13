@@ -3,15 +3,13 @@ package pages;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import selenium.WebDriverWrapper;
 import utils.Log4Test;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
-public class SearchProductPage extends BasePage{
-
+public class SearchProductPage extends BasePage {
     private static final By inputField = By.className("header-search-input-text");
     private static final By searchButton = By.className("btn-link-i");
     private static final By productNew = By.className("g-i-list-title");
@@ -24,7 +22,7 @@ public class SearchProductPage extends BasePage{
     private static final int COLOMN_NUMBER_FOR_PRODUCT1 = 2;
     private static final int COLOMN_NUMBER_FOR_PRODUCT2 = 3;
 
-    public SearchProductPage(WebDriverWrapper driver){
+    public SearchProductPage(WebDriver driver){
         super(driver);
     }
 
@@ -38,7 +36,7 @@ public class SearchProductPage extends BasePage{
         return findProduct;
     }
 
-     public void addToComprasion(){
+    public void addToComprasion(){
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         driver.findElement(add).click();
         Log4Test.info("Продукт добавлен к сравнению");

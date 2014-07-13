@@ -5,11 +5,9 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import selenium.WebDriverWrapper;
 import utils.Log4Test;
 
 public class TicketsPage extends BasePage {
-
     private static final By airAndRailwayTickets = By.id("fatmenu_14");
     //private static final By KievVienna = By.xpath("//*[@id=\"fatmenu_14\"]//a[contains(text(),'Киев') AND contains(text(),'Вена')]");
     private static final By KievVienna = By.xpath("//*[@id=\"fatmenu_14\"]/div/div/ol/li[1]/ul/li[9]/a");
@@ -19,8 +17,8 @@ public class TicketsPage extends BasePage {
     private static final By searchButton = By.id("start_search");
     private static final By errorMessage = By.xpath("//div[contains(@class,'error_popup')]//*[contains(text(),'Младенцев не может быть больше, чем взрослых')]");
 
-    public TicketsPage(WebDriverWrapper driver){
-       super(driver);
+    public TicketsPage(WebDriver driver){
+        super(driver);
     }
 
     public void searchTravel(){

@@ -4,7 +4,6 @@ import org.apache.log4j.Logger;
 import org.testng.Reporter;
 
 public class Log4Test {
-
     private Log4Test(){
     }
 

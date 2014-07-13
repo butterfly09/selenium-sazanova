@@ -3,12 +3,13 @@ package pages;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import selenium.WebDriverWrapper;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
+import java.util.TreeMap;
 
-public class CompareProductsPage extends SearchProductPage{
-
+public class CompareProductsPage extends SearchProductPage {
     private static final By table = By.tagName("tbody");
     private static final By tr = By.tagName("tr");
     private static final By td = By.tagName("td");
@@ -18,7 +19,7 @@ public class CompareProductsPage extends SearchProductPage{
     private static final int SECOND_ELEMENT = 1;
     private static final int THIRD_ELEMENT = 2;
 
-    public CompareProductsPage(WebDriverWrapper driver){
+    public CompareProductsPage(WebDriver driver){
         super(driver);
     }
 
