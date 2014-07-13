@@ -12,8 +12,8 @@ public class BaseTest {
 
     @BeforeSuite
     public void initEnviroment(){
-        driver = new FirefoxDriver();
-        //driver = WebDriverFactory.initDriver(PropertyLoader.loadProperty("browser.name"));
+        //driver = new FirefoxDriver();
+        driver = WebDriverFactory.initDriver(PropertyLoader.loadProperty("browser.name"));
         driver.manage().window().maximize();
     }
 

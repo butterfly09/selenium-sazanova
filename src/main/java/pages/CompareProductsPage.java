@@ -20,7 +20,7 @@ public class CompareProductsPage extends SearchProductPage {
     private static final int SECOND_ELEMENT = 1;
     private static final int THIRD_ELEMENT = 2;
 
-    public CompareProductsPage(WebDriverWrapper driver){
+    public CompareProductsPage(WebDriver driver){
         super(driver);
     }
 

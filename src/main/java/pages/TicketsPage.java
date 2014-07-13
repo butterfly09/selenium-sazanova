@@ -5,6 +5,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.openqa.selenium.interactions.HasInputDevices;
+import org.openqa.selenium.interactions.Actions;
 import selenium.WebDriverWrapper;
 import utils.Log4Test;
 
@@ -20,12 +22,12 @@ public class TicketsPage extends BasePage {
     private static final By searchButton = By.id("start_search");
     private static final By errorMessage = By.xpath("//div[contains(@class,'error_popup')]//*[contains(text(),'Младенцев не может быть больше, чем взрослых')]");
 
-    public TicketsPage(WebDriverWrapper driver){
+    public TicketsPage(WebDriver driver){
         super(driver);
+        URL = "http://rozetka.com.ua/travel/IEV/VIE/";
     }
 
     public void searchTravel(){
-
         Actions builder = new Actions(driver);
         builder.moveToElement(driver.findElement(airAndRailwayTickets));
         builder.perform();

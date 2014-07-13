@@ -6,9 +6,9 @@ import utils.Log4Test;
 
 public class BasePage {
     protected String URL = "http://rozetka.com.ua/";
-    protected WebDriverWrapper driver;
+    protected WebDriver driver;
 
-    public BasePage(WebDriverWrapper driver){
+    public BasePage(WebDriver driver){
         this.driver = driver;
     }
 

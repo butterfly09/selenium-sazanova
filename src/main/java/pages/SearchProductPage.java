@@ -23,7 +23,7 @@ public class SearchProductPage extends BasePage {
     private static final int COLOMN_NUMBER_FOR_PRODUCT1 = 2;
     private static final int COLOMN_NUMBER_FOR_PRODUCT2 = 3;
 
-    public SearchProductPage(WebDriverWrapper driver){
+    public SearchProductPage(WebDriver driver){
         super(driver);
     }
 
